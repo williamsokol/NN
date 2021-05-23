@@ -2,7 +2,7 @@
 Link to it here:https://williamsokol.github.io/NN/<br/><br/>
 This is a very basic neural net that uses:<br/>
 neruon transfer type: feedforward<br/>
-backpropogation type: gradient decent<br/>
+training type: backpropogation<br/>
 activation function type: sigmoid<br/>
 and a custom matrix lib.<br/>
 
