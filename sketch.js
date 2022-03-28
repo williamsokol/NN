@@ -29,8 +29,7 @@ function Start() {
     res = 30;
 
     ctx.font = "30px Arial";
-    ctx.fillText("XOR",BoardPosX+BoardSize/2-30,BoardPosY-130);
-    ctx.fillText("Neural Net Thing",BoardPosX+BoardSize/4,BoardPosY-100);
+    
     ctx.fillText("0,0",BoardPosX-30,BoardPosY-30);
     ctx.fillText("1,0",BoardPosX+BoardSize,BoardPosY-30);
     ctx.fillText("0,1",BoardPosX-30,BoardPosY+BoardSize+30);
@@ -52,7 +51,7 @@ function draw(){
             //fill(50);
             let fill = nn.FeedForward([x,y]);
 
-            drawRect(BoardPosX+i*BoardSize/res,BoardPosY+j*BoardSize/res,BoardSize/res,BoardSize/res,`rgb(${fill*255},${fill*255},0)`);
+            drawRect(BoardPosX+(i*BoardSize/res),BoardPosY+(j*BoardSize/res),BoardSize/res,BoardSize/res,`rgb(${fill*255},${fill*255},0)`);
         }
     }
 }

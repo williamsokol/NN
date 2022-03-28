@@ -1,7 +1,7 @@
 const canvas = document.getElementById("can");
 
  canvas.width =  window.innerWidth/1;
- canvas.height =  window.innerHeight/1;
+ canvas.height =  window.innerHeight/1.2;
 // getContext of canvas = methods and properties to draw and do a lot of thing to the canvas
 const ctx = canvas.getContext('2d');
 
